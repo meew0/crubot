@@ -4,4 +4,11 @@ version: 0.1.0
 authors:
   - meew0 <blactbt@live.de>
 
+dependencies:
+  kemal:
+    github: sdogruyol/kemal
+    branch: master
+  discordcr:
+    github: meew0/discordcr
+
 license: MIT

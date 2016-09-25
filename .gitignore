@@ -3,4 +3,5 @@
 /.crystal/
 /.shards/
 
-
+crubot-auth
+crubot-links
