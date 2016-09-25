@@ -1,2 +1,2 @@
 require "spec"
-require "../src/crubot"
+require "../src/crubot/*"
