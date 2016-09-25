@@ -7,6 +7,10 @@ auth_lines = File.read("crubot-auth").lines
 
 client = Discord::Client.new token: auth_lines[0].strip, client_id: auth_lines[1].strip.to_u64
 
+unless File.exists?("crubot-links")
+  File.write("crubot-links", "{}")
+end
+
 links = Hash(String, Array(UInt64)).from_json(File.read("crubot-links"))
 secret_token = auth_lines[2].strip
 
