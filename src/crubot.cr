@@ -29,7 +29,7 @@ get "/webhook" do
 end
 
 post "/webhook" do |env|
-  body = env.request.body.not_nil!
+  body = env.request.body.not_nil!.gets_to_end
 
   puts body
   puts env.request.headers["X-Hub-Signature"]

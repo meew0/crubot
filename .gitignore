@@ -1,7 +1,10 @@
 /doc/
 /libs/
+/lib/
 /.crystal/
 /.shards/
 
 crubot-auth
 crubot-links
+
+.crystal-version
