@@ -21,6 +21,9 @@ client.on_message_create do |event|
     links[name] << event.channel_id
     File.write("crubot-links", links.to_json)
     client.create_message event.channel_id, "Linked repo #{name} to <##{event.channel_id}> (`#{event.channel_id}`)"
+  elsif event.content.starts_with? "crubot, memory stats"
+    p GC.stats
+    client.create_message event.channel_id, "Memory statistics have been printed to the console."
   end
 end
 
