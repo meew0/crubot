@@ -10,5 +10,6 @@ dependencies:
     branch: master
   discordcr:
     github: meew0/discordcr
+    branch: master
 
 license: MIT
